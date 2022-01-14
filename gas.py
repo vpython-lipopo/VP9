@@ -54,6 +54,7 @@ scene.bind('keydown', keyinput)
 
 while True:
  t += dt
+ times+=1
  rate(10000)
  
  p_a += v_a*dt # calculate new positions for all atoms
@@ -110,5 +111,5 @@ while True:
      P=total_p/(1000*dt*2*(container.length*container.width+container.width*container.height+container.height*container.length))
      total_p=0
      V=container.length*container.width*container.height
-     print(f"T = {T}"+f"P = {P}"+f"V = {V}"++f"P*V = {P*V}"+f"N*k*T = {N*k*T}"+f"P*V**gamma = {P*(V**(5/3))}")
+     print(f"T = {T}"+f"P = {P}"+f"V = {V}"+f"P*V = {P*V}"+f"N*k*T = {N*k*T}"+f"P*V**gamma = {P*(V**(5/3))}")
 
